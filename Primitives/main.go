@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	//n := 1 == 1
 	//m := 1 == 1
@@ -57,8 +55,10 @@ func main() {
 	//fmt.Printf("%v, %T\n", real(n), real(n))
 	//fmt.Printf("%v, %T\n", imag(n), imag(n))
 	//---Text type
-	s := "this is a string"
-	b := []byte(s)
-	fmt.Printf("%v, %T\n", string(s[2]), s)
-	fmt.Printf("%v, %T\n", b, b)
+	//s := "this is a string"
+	//b := []byte(s)
+	//r := 'a'
+	//fmt.Printf("%v, %T\n", string(s[2]), s)
+	//fmt.Printf("%v, %T\n", b, b)
+	//fmt.Printf("%v, %T\n", r, r)
 }
