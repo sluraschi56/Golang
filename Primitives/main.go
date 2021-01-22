@@ -20,13 +20,13 @@ func main() {
 	//fmt.Println(a * b)
 	//fmt.Println(a / b)
 	//fmt.Println(a % b)
-	//---operadores
+	//---operadores booleanos
 	//a := 10 //1010
 	//b := 3  //0011
 	//fmt.Println(a & b) //0010 and
 	//fmt.Println(a | b) //1011 or
 	//fmt.Println(a ^ b) //1001 exclusive or
-	//fmt.Println(a &^ b) //0100 and
+	//fmt.Println(a &^ b) //0100 and not
 	//-- bit shifting
 	//a := 8
 	//fmt.Println(a << 3) // 2^3 * 2^3 = 2^6
