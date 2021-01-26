@@ -2,12 +2,24 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 type Doctor struct {
 	number     int
 	actorName  string
 	companions []string
+}
+
+//En Golang no hay herencia pero se puede hacer los siguiente, haciendo una composicion en Bird con las caracteristicas de Animal
+type Animal struct {
+	Name   string `required max:"100"`
+	Origin string
+}
+type Bird struct {
+	Animal
+	SpeedKPH float32
+	CanFly   bool
 }
 
 func main() {
@@ -36,4 +48,15 @@ func main() {
 		},
 	}
 	fmt.Println(aDoctor.companions[2])
+
+	b := Bird{}
+	b.Name = "Emu"
+	b.Origin = "Australia"
+	b.SpeedKPH = 48
+	b.CanFly = false
+	fmt.Println(b)
+	//uso de tags en los campos de un struct
+	t := reflect.TypeOf(Animal{})
+	field, _ := t.FieldByName("Name")
+	fmt.Println(field.Tag)
 }
